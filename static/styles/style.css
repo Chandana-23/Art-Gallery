@@ -1,0 +1,16 @@
+*{
+    font-family: 'Dancing Script', cursive;
+}
+.intro{
+    font-weight: bold;
+    background-color: gainsboro;
+}
+.info{
+    background-color: orange;
+}
+.info p{
+    font-size: 25px;
+}
+.gallery{
+    background-color: greenyellow;
+}

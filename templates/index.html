@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" type="text/css">
+    <title>Jyo - Art Gallery</title>
+</head>
+<body>
+<div class="container intro p-3">
+    <div class="row d-block text-center">
+        <h2 class="text-center">I AM</h2>
+        <h2 class="text-center">JYOTHI SHIVARATHRI</h2>
+        <h2 class="text-center" style="color: orange;">A SELF-TAUGHT ARTIST</h2>
+        <h3 class="text-center">With time much like me, my relationship with art has grown too. From being a medium of expression to becoming a place for comfort and healing, it may have adapted different meanings for me but if has always been there for me...</h3>
+    </div>
+    <div class="container p-5 d-flex justify-content-center">
+        <a class="text-black" href='https://www.instagram.com/imperfect_sketchers12/'><i class="p-2 fab fa-instagram-square fa-3x"></i></a>
+        <a class="text-black" href='mailto:sjyothisjyothi4@gmail.com'><i class="p-2 fab fa-google-plus-square fa-3x"></i></a>
+    </div>
+</div>
+<div class="container info p-3">
+    <h1 class="text-center">Who Am I ?</h1>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="d-block text-center  col-sm-12 col-lg-12 col-xl-6 col-md-12 col-12">
+            <img class="img img-thumbnail w-50" src="{% static 'images/jyo.jpeg' %}" alt="img-jyo"/>
+        </div>
+        <div class=" col-sm-12  col-lg-12 col-xl-6 col-md-12 col-12 ">
+            <p>
+                &star; Hi, I'm Jyothi, a self- taught artist hailing from Hyderabad, Telangana,India.
+            </p>
+            <p>
+                &star; I love spreading smiles through my art. No matter what I'm studying or what profession I choose, I always found myself completely joyful while creating the art.
+            </p>
+            <p>
+                &star; I love working on realism. I draw realistic graphite, cross hatching, water colours, and doodles arts and Mostly I work on dry media.
+            
+                &star; Now that you are here,why don't you spend some time , take a look around and check my art works. At the end if my work convenience you, I will recreate the moments of your life, like never before.
+            </p>
+            <p>
+                &star; Let's make your memories even more memorable with handmade art.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container gallery p-2 d-block text-center">
+    <h1 class="text-center">Have a look</h1>
+    {% for i in gallery %}
+    <img src="{{ i.img.url }}" alt="img" class="img w-70"/>
+    {% endfor %}
+</div>
+<footer>
+    <div class="container text-white d-block text-center bg-black">
+        THANK YOU. Show some ❤
+    </div>
+</footer>
+</body>
+</html>
