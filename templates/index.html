@@ -21,7 +21,7 @@
         <h2 class="text-center">I AM</h2>
         <h2 class="text-center">JYOTHI SHIVARATHRI</h2>
         <h2 class="text-center" style="color: orange;">A SELF-TAUGHT ARTIST</h2>
-        <h3 class="text-center">With time much like me, my relationship with art has grown too. From being a medium of expression to becoming a place for comfort and healing, it may have adapted different meanings for me but if has always been there for me...</h3>
+        <h3 class="text-center">With time much like me, my relationship with art has grown too. From being a medium of expression to becoming a place for comfort and healing, it may have adapted different meanings for me but it has always been there for me...</h3>
     </div>
     <div class="container p-5 d-flex justify-content-center">
         <a class="text-black" href='https://www.instagram.com/imperfect_sketchers12/'><i class="p-2 fab fa-instagram-square fa-3x"></i></a>
@@ -34,7 +34,7 @@
         <div class="d-block text-center  col-sm-12 col-lg-12 col-xl-6 col-md-12 col-12">
             <img class="img img-thumbnail w-50" src="{% static 'images/jyo.jpeg' %}" alt="img-jyo"/>
         </div>
-        <div class=" col-sm-12  col-lg-12 col-xl-6 col-md-12 col-12 ">
+        <div class=" col-sm-12  col-lg-12 col-xl-6 col-md-12 col-12 p-2">
             <p>
                 &star; Hi, I'm Jyothi, a self- taught artist hailing from Hyderabad, Telangana,India.
             </p>
@@ -52,10 +52,10 @@
         </div>
     </div>
 </div>
-<div class="container gallery p-2 d-block text-center">
+<div class="container gallery d-block text-center p-3">
     <h1 class="text-center">Have a look</h1>
     {% for i in gallery %}
-    <img src="{{ i.img.url }}" alt="img" class="img w-70"/>
+    <img src="{{ i.img.url }}" alt="img" class="img w-100"/>
     {% endfor %}
 </div>
 <footer>
