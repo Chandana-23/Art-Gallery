@@ -55,7 +55,20 @@
 </div>
 <div class="container gallery d-block text-center p-3">
     <h1 class="text-center">Have a look</h1>
-    {% for i in gallery %}
+    <h3>Colour Portraits</h3>
+    {% for i in colour %}
+    <img src="{{ i.img.url }}" alt="img" class="img w-100 p-3"/>
+    {% endfor %}
+    <h3>Cross Hatching</h3>
+    {% for i in cross %}
+    <img src="{{ i.img.url }}" alt="img" class="img w-100 p-3"/>
+    {% endfor %}
+    <h3>Graphite Portraits</h3>
+    {% for i in graphite %}
+    <img src="{{ i.img.url }}" alt="img" class="img w-100 p-3"/>
+    {% endfor %}
+    <h3>Doodles</h3>
+    {% for i in doodle %}
     <img src="{{ i.img.url }}" alt="img" class="img w-100 p-3"/>
     {% endfor %}
 </div>

@@ -1,9 +1,12 @@
 from django.shortcuts import render
 
-from .models import Gallery
+from .models import Colour, Cross, Doodle, Graphite
 
 # Create your views here.
 def home(request):
-    gallery = Gallery.objects.all()
-    return render(request,'index.html',{'gallery':gallery})
+    colour = Colour.objects.all()
+    cross = Cross.objects.all()
+    graphite = Graphite.objects.all()
+    doodle = Doodle.objects.all()
+    return render(request,'index.html',{'colour':colour,'cross':cross,'graphite':graphite,'doodle':doodle})
 
